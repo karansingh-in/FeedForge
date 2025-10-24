@@ -5,12 +5,14 @@ post = [
     {
         'name' : 'karan',
         'title' : 'text 1',
-        'content' : 'this is testing'
+        'content' : 'this is testinggggggggggggggggggggggggggggggggggggggggggggggggggg',
+        'source' : 'github'
     },
     {
-        'name' : 'kkkk',
+        'name' : 'kkkkkk',
         'title' : 'text 2',
-        'content' : 'this si test 2'
+        'content' : 'this si test 2222222222222222222222222222222222222222222',
+        'source' : 'insta'
     }
 ]
 
@@ -21,6 +23,6 @@ def home(request):
     return render(request, 'feed/home.html', context) # location should be folder inside the templates directory/html file name
 
 def about(request):
-    return HttpResponse('<h1>aboutttttttttttttttt pageeeeeeeeeeeeeeeeeeeeee</h1>')
+    return render(request, 'feed/about.html')
 
 # Create your views here.

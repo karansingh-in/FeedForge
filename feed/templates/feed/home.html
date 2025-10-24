@@ -2,7 +2,7 @@
     {%block content%}
     {% for post in posts %}
         <h2>{{post.title}}</h2>
-        <p>By {{post.name}}</p>
+        <p>By {{post.name}} on {{post.source}}</p>
         <p>{{post.content}}</p>
     {% endfor %}
     {%endblock%}
